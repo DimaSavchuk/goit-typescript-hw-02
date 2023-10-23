@@ -14,8 +14,8 @@ type User = {
   password: string;
 };
 
-// type Form = Partial<User>;
-type Form = Omit<User, "name" | "surname">;
+type Form = Partial<User>;
+// type Form = Omit<User, "name" | "surname">;
 
 function createOrUpdateUser(initialValues: Form) {
   // Оновлення користувача
